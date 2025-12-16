@@ -35,6 +35,8 @@ s/^max-connections *=.*/max-connections = $max_connections/" $HOME/.celestia-app
 ------------------------------------------------
 pruning_keep_recent="100" 
 pruning_interval="10"
+"name": "PayneJoe",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6851723?v=4",
 ------------------------------------------------------
 sed -i -e "s/^pruning *=.*/pruningÂ = \"custom\"/;\
 s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_recent\"/;\
