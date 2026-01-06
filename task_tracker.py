@@ -26,6 +26,12 @@ def add_task(title):
     print("Task added successfully.")
 
 
+def save_tasks(tasks):
+    with open(DATA_FILE, "w") as file:
+        json.dump(tasks, file, indent=4)
+
+
+
 def list_tasks():
     tasks = load_tasks()
     if not tasks:
