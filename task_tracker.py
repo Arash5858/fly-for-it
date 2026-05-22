@@ -32,7 +32,11 @@ def add_task(title):
     save_tasks(tasks)
     print("Task added successfully.")
 
-
+  with open(DATA_FILE, "r") as file:
+        return json.load(file)
+def save_tasks(tasks):
+    with open(DATA_FILE, "w") as file:
+        json.dump(tasks, file, indent=4)
 def save_tasks(tasks):
     with open(DATA_FILE, "w") as file:
         json.dump(tasks, file, indent=4)
