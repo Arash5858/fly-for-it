@@ -46,7 +46,12 @@ def load_tasks():
         return []
     with open(DATA_FILE, "r") as file:
         return json.load(file)
-
+        return json.load(file)
+def list_tasks():
+    tasks = load_tasks()
+    if not tasks:
+        print("No tasks found.")
+        return
 
 def load_tasks():
     if not os.path.exists(DATA_FILE):
